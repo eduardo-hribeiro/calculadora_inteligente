@@ -1,0 +1,103 @@
+# Script inicial para rodar o código feito em python
+#!/usr/bin/env python3
+print("Seja bem-vindo(a) à calculadora inteligente!\n")
+nome = input("Para começar, digite o seu nome: ")
+
+# Loop principal do menu
+while True:
+    print(f"\n{nome}, qual operação você deseja realizar?")
+    print("\n1 - Adição")
+    print("2 - Subtração")
+    print("3 - Multiplicação")
+    print("4 - Divisão")
+    print("5 - Divisão inteira")
+    print("6 - Resto da divisão")
+    print("7 - Potenciação")
+    print("8 - Realizar todas as operações em conjunto")
+    print("9 - Tabuada de multiplicação")
+    # Opção para encerrar
+    print("0 - Sair")
+
+    # Seleciona a operação
+    escolha = input("\nDigite o número da operação desejada: ")
+
+    if escolha == "0":
+        print("\nAté logo!")
+        # Sai do while e encerra o programa
+        break
+
+    elif escolha == "1":
+        print("\nVocê escolheu a operação de Adição!")
+        num1 = float(input("Digite o primeiro número: "))
+        num2 = float(input("Digite o segundo número: "))
+        print(f"Resultado: {num1} + {num2} = {num1 + num2}")
+
+    elif escolha == "2":
+        print("\nVocê escolheu a operação de Subtração!")
+        num1 = float(input("Digite o primeiro número: "))
+        num2 = float(input("Digite o segundo número: "))
+        print(f"Resultado: {num1} - {num2} = {num1 - num2}")
+
+    elif escolha == "3":
+        print("\nVocê escolheu a operação de Multiplicação!")
+        num1 = float(input("Digite o primeiro número: "))
+        num2 = float(input("Digite o segundo número: "))
+        print(f"Resultado: {num1} x {num2} = {num1 * num2}")
+
+    elif escolha == "4":
+        print("\nVocê escolheu a operação de Divisão!")
+        num1 = float(input("Digite o primeiro número: "))
+        num2 = float(input("Digite o segundo número: "))
+        if num2 != 0: # Não é possível dividir por zero
+            print(f"Resultado: {num1} ÷ {num2} = {num1 / num2}")
+        else:
+            print("Erro: não é possível dividir por zero!")
+
+    elif escolha == "5":
+        print("\nVocê escolheu a operação de Divisão inteira!")
+        num1 = float(input("Digite o primeiro número: "))
+        num2 = float(input("Digite o segundo número: "))
+        if num2 != 0: # Não é possível dividir por zero
+            print(f"Resultado: {num1} ÷ {num2} = {num1 // num2}")
+        else:
+            print("Erro: não é possível dividir por zero!")
+
+    elif escolha == "6":
+        print("\nVocê escolheu a operação de Resto da divisão!")
+        num1 = float(input("Digite o primeiro número: "))
+        num2 = float(input("Digite o segundo número: "))
+        if num2 != 0: # Não é possível dividir por zero
+            print(f"Resultado: {num1} % {num2} = {num1 % num2}")
+        else:
+            print("Erro: não é possível dividir por zero!")
+
+    elif escolha == "7":
+        print("\nVocê escolheu a operação de Potenciação!")
+        num1 = float(input("Digite o primeiro número: "))
+        num2 = float(input("Digite o segundo número: "))
+        print(f"Resultado: {num1} ^ {num2} = {num1 ** num2}")
+
+    elif escolha == "8":
+        print("\nVocê escolheu a operação de Realizar todas as operações em conjunto!")
+        num1 = float(input("Digite o primeiro número: "))
+        num2 = float(input("Digite o segundo número: "))
+        print(f"Adição: {num1} + {num2} = {num1 + num2}")
+        print(f"Subtração: {num1} - {num2} = {num1 - num2}")
+        print(f"Multiplicação: {num1} x {num2} = {num1 * num2}")
+        if num2 != 0:
+            print(f"Divisão: {num1} ÷ {num2} = {num1 / num2}")
+            print(f"Divisão inteira: {num1} ÷ {num2} = {num1 // num2}")
+            print(f"Resto da divisão: {num1} % {num2} = {num1 % num2}")
+        else:
+            print("Erro: não é possível dividir por zero!")
+        print(f"Potenciação: {num1} ^ {num2} = {num1 ** num2}")
+
+    elif escolha == "9":
+        print("\nVocê escolheu a operação de Tabuada de Multiplicação!")
+        num = float(input("Digite o número para calcular a tabuada: "))
+        print(f"Tabuada do {num}:")
+        for i in range(1, 11):
+            print(f"{num} x {i} = {num * i}")
+
+    else:
+        print("\nVocê não escolheu nenhuma operação válida! Retorne ao menu de escolhas.")
