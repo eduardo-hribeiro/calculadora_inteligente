@@ -22,13 +22,13 @@ bash calculadora.sh
 ## Explicação do código em Python
 O arquivo calculadora_inteligente_ebac.py implementa uma calculadora interativa que permite ao usuário escolher operações matemáticas a partir de um menu.
 Funcionalidades implementadas:
-Adição
-Subtração
-Multiplicação
-Divisão
-Divisão inteira
-Resto da divisão
-Potenciação
-Realizar todas as operações em conjunto
-Tabuada de multiplicação
+ - Adição
+ - Subtração
+ - Multiplicação
+ - Divisão
+ - Divisão inteira
+ - Resto da divisão
+ - Potenciação
+ - Realizar todas as operações em conjunto
+ - Tabuada de multiplicação
 O usuário escolhe a operação digitando o número correspondente no menu, insere os valores desejados e recebe o resultado.
