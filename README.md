@@ -31,4 +31,5 @@ Funcionalidades implementadas:
  - Potenciação
  - Realizar todas as operações em conjunto
  - Tabuada de multiplicação
+
 O usuário escolhe a operação digitando o número correspondente no menu, insere os valores desejados e recebe o resultado.
